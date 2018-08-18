@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+}
+
+#form_container {
+    height: 100vh;
+}
+
+#signup_form {
+    border: 1px solid black;
+}
+

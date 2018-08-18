@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Signup Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <select id="country_select">
+
+        </select>
+        <div class="row justify-content-center">
+            <div class="col-6 d-flex justify-content-center align-items-center" id="form_container">
+                <form id="signup_form" class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="firstname">
+                                <span class="lang_firstname_label"></span>
+                            </label>
+                            <input type="text" name="firstname" id="firstname" class="form-control" required>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="lastname">
+                                <span class="lang_lastname_label"></span>
+                            </label>
+                            <input type="text" name="lastname" id="lastname" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">
+                            <span class="lang_address_label"></span>
+                        </label>
+                        <input type="text" name="address" id="address" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="lang_email_label"></span>
+                        </label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeat_email">
+                            <span class="lang_repeat_email_label"></span>
+                        </label>
+                        <input type="email" name="repeat_email" id="repeat_email" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-success col-12">Sign Up!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/language.js"></script>
+</body>
+
+</html>
