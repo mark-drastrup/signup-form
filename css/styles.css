@@ -10,3 +10,12 @@ body {
     border: 1px solid black;
 }
 
+form {
+    background: gray;
+}
+
+/* FLAG STYLING */
+.flag-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
