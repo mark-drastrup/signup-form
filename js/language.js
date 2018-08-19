@@ -56,6 +56,7 @@ function loadsLanguage(lang) {
 }
 
 //change language onChange
-$("#country_select").change((e) => {
-  loadsLanguage(e.target.value);
-}); 
+$(".flag-icon").click(function (e) {
+  let language = $(this).data("lang");
+  loadsLanguage(language);
+})
