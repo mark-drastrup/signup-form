@@ -15,53 +15,63 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-6 d-flex justify-content-center align-items-center" id="form_container">
-                <form id="signup_form" class="needs-validation" novalidate>
+                <form id="signup_form" class="needs-validation">
                     <div class="d-flex justify-content-end">
                         <span class="flag-icon flag-icon-dk" data-lang="DA"></span>
                         <span class="flag-icon flag-icon-gb-eng" data-lang="EN"></span>
                         <span class="flag-icon flag-icon-jp" data-lang="JP"></span>
                     </div>
 
+                    <div class="form-group">
+                        <label for="username">
+                            <span class="lang_username_label"></span>
+                        </label>
+                        <input type="text" name="username" id="username" class="form-control">
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-6">
                             <label for="firstname">
                                 <span class="lang_firstname_label"></span>
                             </label>
-                            <input type="text" name="firstname" id="firstname" class="form-control" required>
+                            <input type="text" name="firstname" id="firstname" class="form-control">
+                            <div class="has_error"></div>
                         </div>
                         <div class="form-group col-6">
                             <label for="lastname">
                                 <span class="lang_lastname_label"></span>
                             </label>
-                            <input type="text" name="lastname" id="lastname" class="form-control" required>
+                            <input type="text" name="lastname" id="lastname" class="form-control">
+                            <div class="has_error"></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="address">
                             <span class="lang_address_label"></span>
                         </label>
-                        <input type="text" name="address" id="address" class="form-control" required>
+                        <input type="text" name="address" id="address" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">
                             <span class="lang_email_label"></span>
                         </label>
-                        <input type="email" name="email" id="email" class="form-control" required>
+                        <input type="email" name="email" id="email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="repeat_email">
                             <span class="lang_repeat_email_label"></span>
                         </label>
-                        <input type="email" name="repeat_email" id="repeat_email" class="form-control" required>
+                        <input type="email" name="repeat_email" id="repeat_email" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-success col-12">Sign Up!</button>
+                    <input type="hidden" name="chosen_language" id="chosen_language" value="DA">
                 </form>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script type="text/javascript" src="js/language.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
 </body>
 
 </html>

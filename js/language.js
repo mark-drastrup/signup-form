@@ -6,6 +6,7 @@ var LanguageList = {
 
 //languages Objects
 var WORDS_JP = {
+  "username_label": "名前",
   "firstname_label": "名前",
   "lastname_label": "名前",
   "address_label": "名前",
@@ -14,6 +15,7 @@ var WORDS_JP = {
 };
 
 var WORDS_EN = {
+  "username_label": "Username",
   "firstname_label": "Firstname",
   "lastname_label": "Lastname",
   "address_label": "Adress",
@@ -22,6 +24,7 @@ var WORDS_EN = {
 };
 
 var WORDS_DA = {
+  "username_label": "Brugernavn",
   "firstname_label": "Fornavn",
   "lastname_label": "Efternavn",
   "address_label": "Adresse",
@@ -50,7 +53,6 @@ function loadsLanguage(lang) {
   $('span[class^="lang"]').each(function () {
     var LangVar = (this.className).replace('lang_', '');
     var Text = window["WORDS_" + lang][LangVar];
-    debugger;
     $(this).text(Text);
   });
 }
@@ -59,4 +61,5 @@ function loadsLanguage(lang) {
 $(".flag-icon").click(function (e) {
   let language = $(this).data("lang");
   loadsLanguage(language);
-})
+  $("#chosen_language").val(language);
+});
