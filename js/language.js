@@ -18,7 +18,7 @@ var WORDS_EN = {
   "username_label": "Username",
   "firstname_label": "Firstname",
   "lastname_label": "Lastname",
-  "address_label": "Adress",
+  "address_label": "Address",
   "email_label": "Email",
   "repeat_email_label": "Repeat email",
 };
