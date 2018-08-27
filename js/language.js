@@ -37,15 +37,16 @@ window.onload = initialize;
 
 function initialize() {
 
-  var $dropdown = $("#country_select");
+  /*var $dropdown = $("#country_select");
   $.each(LanguageList, function (key, value) {
     $dropdown.
       append($("<option/>").
         val(key).
         text(value));
-  });
+  });*/
 
-  loadsLanguage("JP");
+  loadsLanguage("EN");
+  //$("ul").first().addClass("background_slideshow");
 }
 
 function loadsLanguage(lang) {
@@ -63,3 +64,5 @@ $(".flag-icon").click(function (e) {
   loadsLanguage(language);
   $("#chosen_language").val(language);
 });
+
+

@@ -12,6 +12,7 @@ $(document).ready(function () {
 
     //add validation to the form
     $("#signup_form").validate({
+        errorClass: "invalid",
         rules: {
             username: "required",
             firstname: "required",
@@ -47,9 +48,18 @@ $(document).ready(function () {
                 });
             }
         }
-
-        //check if form is valid to trigger custom message change
-        $('#signup_form').valid();
+        //check if click on flag icon should trigger validation messages
+        changeLang();
     });
+
+    function changeLang() {
+        //get list of all error messages
+        var errorMessages = $(".invalid");
+        if (errorMessages.length !== 0) {
+            $('#signup_form').valid();
+        } else {
+            return;
+        }
+    }
 });
 
